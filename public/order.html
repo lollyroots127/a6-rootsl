@@ -28,6 +28,139 @@
     </nav>
     <main>
         <section>
+            <h2>Order</h2>
+            <article>
+                <p>Use this page to place an order for products.</p>
+                <form action="/order-confirmation" method="POST">
+                    <fieldset>
+                        <legend>Please provide your contact information</legend>
+                        <label for="name" class="required">First and Last Name
+                            <input type="text"
+                            name="name"
+                            id="name"
+                            required
+                            autofocus
+                            placeholder="e.g. John Smith"
+                            aria-required="true"/>
+                        </label>
+                        <label for="email" class="required">Email Address
+                            <input type="email"
+                            name="email"
+                            id="email"
+                            required
+                            placeholder="e.g. johnsmith@email.com"
+                            aria-required="true"
+                            />
+                        </label>
+                        <label for="street1" class="required">Street Line 1
+                            <input type="text"
+                            name="street1"
+                            id="street1"
+                            required
+                            placeholder="e.g. 123 Street Ln"
+                            aria-required="true"
+                            ></textarea>
+                        </label>
+                        <label for="street2">Street Line 2
+                            <input type="text"
+                            name="street2"
+                            id="street2"
+                            placeholder="e.g. Apt 123"
+                            ></textarea>
+                        </label>
+                        <label for="city" class="required">City
+                            <input type="text"
+                            name="city"
+                            id="city"
+                            required
+                            placeholder="e.g. Los Angeles"
+                            aria-required="true"
+                            ></textarea>
+                        </label>
+                        <label for="state" class="required">State
+                            <input type="text"
+                            name="state"
+                            id="state"
+                            required
+                            placeholder="e.g. California"
+                            aria-required="true"
+                            ></textarea>
+                        </label>
+                        <label for="city" class="required">Zip
+                            <input type="text"
+                            name="city"
+                            id="city"
+                            required
+                            placeholder="e.g. 90018"
+                            aria-required="true"
+                            ></textarea>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Order Information</legend>
+                        <table>
+                            <caption>Select one item to order</caption>
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AGYM</td>
+                                    <td>
+                                        <label for="scratcherBall">
+                                            <input type="radio" name="product" id="scratcherBall" value="Spinning Cat Scratcher Ball" checked>Spinning Cat Scratcher Ball
+                                        </label>
+                                    </td>
+                                    <td>$52.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Jasonwell</td>
+                                    <td>
+                                        <label for="dogPool">
+                                            <input type="radio" name="product" id="dogPool" value="Foldable Dog Pool">Foldable Dog Pool
+                                        </label>
+                                    </td>
+                                    <td>$27.25</td>
+                                </tr>
+                                <tr>
+                                    <td>Expawlorer</td>
+                                    <td>
+                                        <label for="fenceWindow">
+                                            <input type="radio" name="product" id="fenceWindow" value="Dog Fence Window">Dog Fence Window
+                                        </label>
+                                    </td>
+                                    <td>$30.50</td>
+                                </tr>
+                                <tr>
+                                    <td>Lollimeow</td>
+                                    <td>
+                                        <label for="travelBackpack">
+                                            <input type="radio" name="product" id="travelBackpack" value="Capsule Pet Travel Backpack">Capsule Pet Travel Backpack
+                                        </label>
+                                    </td>
+                                    <td>$59.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Drool'd</td>
+                                    <td>
+                                        <label for="catHamsterWheel">
+                                            <input type="radio" name="product" id="catHamsterWheel" value="Cat Hamster Wheel">Cat Hamster Wheel
+                                        </label>
+                                    </td>
+                                    <td>$349.75</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <label for="quantity">How many?
+                            <input type="number" name="quantity" id="quantity" placeholder="Quantity">
+                        </label>
+                        <button type="submit">Place Order</button>
+                    </fieldset>
+            </article>
         </section>
     </main>
     <footer>

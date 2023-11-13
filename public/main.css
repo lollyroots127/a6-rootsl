@@ -205,9 +205,16 @@
   ins {}
   
   /*  ----- Table ----- */
-  table {}
-  caption {}
-  thead {}
+  table {
+    width: 100%;
+  }
+  caption {
+    color: var(--muddyBrown);
+    font-weight: bold;
+  }
+  thead {
+    color: var(--forestGreen);
+  }
   tbody {}
   tfoot {}
   tr {}
@@ -221,34 +228,45 @@
   
   
   /*  ----- Form ----- */
-  form {}
+  form {
+    display: flex;
+    align-items:flex-start;
+  }
   fieldset {
     border: 2px solid var(--muddyBrown); 
     margin-top: 1px; 
     padding: 1%;  
+    min-width: 300px;
+    width: 50%;
   }
     legend {
       color: var(--muddyBrown);
-      font-size: 1.5em;
+      font-weight: bold;
     }
   label {
-    display:block;
+    display: block;
     margin-top:2%;
-    
+    padding: 0.5%;
   }
   input, button, textarea, select {
     font-size:110%;
     padding:1%;
     font-family:inherit;
   }
-  *:required {
-    border:2px solid red;
+
+  textarea {
+    width: 80%;
   }
-  label.required:after {
-    content:" *";
+  *:required {
+    border:1.5px solid red;
+  }
+  label.required:before {
+    content:"* ";
     color: red; 
 }
-  button {}
+  button {
+    margin-top: 2%;
+  }
   input {}
   select {}
     optgroup {}
