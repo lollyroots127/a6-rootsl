@@ -1,0 +1,10 @@
+lightSkyBlue #A1C3E0
+skyBlue #7891A7
+darkSkyBlue #4D5D6B
+palePink #C9AC9D
+transparentPink rgba(201, 172, 157, 0.5)
+lightForestGreen #657A44
+forestGreen #354024
+darkForestGreen #1D2314
+lightGray #D5D5D5
+muddyBrown #3A1E18

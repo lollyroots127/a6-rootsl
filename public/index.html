@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Laura Roots</title>
+    <meta name="robots" content="noindex, noarchive, nofollow" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> 
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png"> 
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> 
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <img id="logo" src="android-chrome-192x192.png">
+        <h1>Laura Roots</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Web Development Concepts</h2>
+            <nav class="local">
+                <a href="#servers">Web Servers</a>
+                <a href="#design">Frontend Design</a>
+                <a href="#images">Optimizing Images</a>
+                <a href="#favicons">Favicons</a>
+            </nav>
+            <article id="servers">
+                <h3>Web Servers</h3>
+                <!-- 1. Explain what index means as it relates to websites and servers. -->
+                <p>This file is named <code>index.html</code>, and it is the <strong>designated homepage</strong> of the <code>/~rootsl/a1-rootsl/</code> directory located on the OSU Engineering
+                web server. When a web browser sends a Hypertext Transfer Protocol (<strong>HTTP</strong>) request for the directory, the <strong>Apache</strong> web server, the software used by OSU Engineering, maps the request to this file. 
+                The majority of web servers are configured to search for an <code>index.html</code> file whenever they receive a request for <code>/</code>, the <strong>root directory</strong>. On 
+                some web servers, other file names are accepted as homepages. For example, Microsoft web servers will also look for <code>default.html</code> files.</p>
+                <!-- 2. Explain what can be seen in the browser's Web Dev/Inspector Network tab output screen. What is different about the file's details when viewed from the web server versus the local computer? -->
+                <p>The Inspection tools in web browsers such as Firefox and Google Chrome allow users to view requests and responses between the <strong>web client</strong> and different servers. The network information
+                can differ based on which <strong>protocol</strong> is used. When viewing the local file version of this webpage, the network information will show three resources: <code>index.html</code>, <code>main.css</code>, and <code>main.js</code>. 
+                The general network information for the <code>index.html</code> file shows the Universal Resource Locator (<strong>URL</strong>), request method, status code, and referrer policy. It shows limited response and request headers as well.
+                When the same file is accessed through a web server, the network information is quite different. An additional <code>favicon.ico</code> file is shown. The general tab includes
+                a remote Internet Protocol (<strong>IP</strong>) address for where the server is located. The request and response headers are more detailed, showing information on the server, the user-agent, and time and date signatures.</p>
+                <!-- 3. Explain why the favicon.ico file has a status 200, but the main.css and main.js files do not. -->
+                <p>When viewing the network tab for the file hosted on the OSU Engineering web server, four main resources are listed with different status codes. The <code>index.html</code> file and <code>favicon.ico</code> files
+                have 200 status codes, meaning the files were found and retrieved successfully. The <code>main.css</code> and <code>main.jss</code> files are listed with 404 status codes, meaning the files were not found. The only file located
+                in the <code>/~rootsl/a1-rootsl/</code> directory was <code>index.html</code>. The <code>main.css</code> and <code>main.jss</code> files are linked in the <code>index.html</code> file but are not provided or located on the web server.
+                Upon inspection, the URL for the <code>favicon.ico</code> file is located inside the root directory of the <code>web.engr.oregonstate.edu</code> server. It is a file provided by the parent directory; therefore, it has a success status code.</p>
+                <!-- 4. Explain the parts of the URL to your web file. What is the scheme, the subdomain, the host domain, and the resource. -->
+                <p>The URL of this webpage can be broken into four main components: the scheme, the subdomain, the host domain, and the resource. The <strong>scheme</strong> in this case is <code>https</code>, which means the web browser used a Secure HTTP
+                protocol to access the requested resource. The <strong>subdomains</strong> are <code>web</code> and <code>engr</code>. These identify what part of the server the request should be sent to. The <strong>host domain</strong> or <strong>server name</strong>
+                is <code>oregonstate.edu</code>. The server name identifies which machine, or server, the resource is hosted on. The Domain Name System (<strong>DNS</strong>) maps the server name to a machine-understandable IP address. Finally, the <strong>path to resource</strong>
+                is <code>/~rootsl/a1-rootsl/</code>. This identifies where the server should look to find the resource.</p>
+            </article>
+            <article id="design">
+                <h3>Frontend Design</h3>
+                <!-- 1. Explain the concept of frontend design, in a <p> paragraph.-->
+                <p><strong>Frontend design</strong> refers to the portion of web development focused on the user experience. It involves designing the visual components of an application, including the styling via CSS, the Graphical User Interface (<strong>GUI</strong>), 
+                and any interactive experiences via JavaScript. Any aspect of a program that interfaces with a user involves front-end design. Key considerations are having a consistent theme, an easy-to-understand interface, and an overall design that is interesting and enjoyable.
+                The measure of how well a system uses each of those components is called <strong>usability</strong>.</p>
+                <!-- 2. Explain the five "E"s of usability, in a <dl> definition list that separates the topics and descriptions. -->
+                <p>The five "E"s of usability are:</p>
+                <dl>
+                    <dt>Effective</dt>
+                    <dd>How well are users able to complete any task?</dd>
+                    <dt>Efficient</dt>
+                    <dd>Are users able to complete their tasks quickly & easily?</dd>
+                    <dt>Easy to navigate</dt>
+                    <dd>Are new and experienced users able to find and remember where they need to go?</dd>
+                    <dt>Error-free</dt>
+                    <dd>Are users able to complete their tasks without encountering errors? Are all accessibility concerns addressed?</dd>
+                    <dt>Enjoyable or engaging</dt>
+                    <dd>Do users enjoy using the product? Does it appeal to the intended audience?</dd>
+                </dl>
+                <!-- 3. Explain the purpose of each of the page layout tags, in a <p> paragraph. -->
+                <p>Page layout tags are <strong>block-level</strong> elements that help organize content on a page. While they visually function the same by blocking off sections with a <strong>newline</strong>, they also have functional purposes. The <code>&lt;header&gt;</code> tag
+                is used for the banner at the top of a page, which typically stays consistent throughout the entire site. It will typically include the name of the site and marketing materials such as a logo or slogan. The <code>&lt;nav&gt;</code> tag provides links to other webpages and 
+                a search bar. The <code>&lt;main&gt;</code> tag holds the main body of content on a webpage. Inside the <code>&lt;main&gt;</code> element are <code>&lt;section&gt;</code> elements that group content thematically. A <code>&lt;section&gt;</code> typically has a <code>&lt;h1&gt;</code>
+                headline and <code>&lt;article&gt;</code> elements. An <code>&lt;article&gt;</code> typically has a <code>&lt;h1&gt;</code> headline and content over a single topic. Articles often have an <strong>ID</strong> selector for navigation and styling purposes. Other page layout
+                components include <code>&lt;aside&gt;</code> elements for floating content, <code>&lt;figure&gt;</code> elements for media, and <code>&lt;blockquote&gt;</code> elements for long quotations. Outside the <code>&lt;main&gt;</code> element is the <code>&lt;footer&gt;</code> for
+                copyright and contact information. A final page layout component is a <code>&lt;div&gt;</code>, which is used as a basic divider and a placeholder for dynamic content.</p>
+                <!-- 4. Explain how anchors link to external content, internal content, and from page-to-page, in an <ol> ordered list. -->
+                <p><strong>Anchor</strong> elements <code>&lt;a&gt;</code> are used to link to various locations. They will include an <strong>attribute</strong> that provides where the anchor will link to and text in between the opening and closing tags that will describe the link that the user will click. 
+                Anchor tags can be used to link to these different types of content:</p>
+                <ol>
+                    <li>External content through a URL, such as <code>&lt;a href="https://example.com/"&gt;Example&lt;/a&gt;</code>, which will display the highlighted text "Example" and link the user to the https://example.com website.</li>
+                    <li>Internal content through ID tags, such as <code>&lt;a href="#article1"&gt;Article 1&lt;/a&gt;</code>, which will display the highlighted text "Article 1" and link the user to the element on the page with the id article1.</li>
+                    <li>A new page within the site itself through either <strong>relative</strong> or <strong>absolute</strong> paths. Since there is another page in this directory called <code>contact.html</code>, it could be reached through <code>&lt;a href="contact.html"&gt;Contact&lt;/a&gt;</code>.</li>
+                </ol>
+            </article>
+            <article id="images">
+                <h3>Optimizing Images</h3>
+                <!-- 1. What are the 6 major specifications of images for the web? And why? -->
+                <p>There are six main specifications for optimizing images on the web. First, images should have descriptive and concise files names to assist with search engine optimization (<strong>SEO</strong>). Search engine bots will use the file names to categorize images for users. 
+                Second, file sizes should be as small as possible to improve load times for webpages. This can be done through <strong>image compression</strong>. Lossy compression makes rough approximations and discards data, which leads to pixelation. An alternative is lossless compression, which loses no
+                data and is reversible. Third, images should be cropped to fit the exact dimensions of space allocated, which also improves load times. Fourth, images should be saved in the most appropriate file format, which is described below. Certain types of file formats are ideal for different purposes.
+                Fifth, images should be served to the proper resolution for different monitors. The previous standard resolution was 72 pixels per inch (ppi), but higher resolutions are now available. A good webpage will provide different sizes to fit different user resolutions. Sixth, images should be saved
+                with an appropriate color mode. RGB is the standard for .PNG, .JPG, .SVG, and .WebP, while Indexed is better for .GIF or .PNG. It is up to the developer to understand these specifications and optimize them for their users.</p>
+                <!-- 2. Which file formats are most appropriate for photos and line art? And why? -->
+                <p>As mentioned previously, different file formats are appropriate for different purposes, such as for photos or line art. JPG and WebP files are better suited for photography and screenshots. They can both uses millions of different colors and be compressed down to much smaller files sizes. WebP files also 
+                allow for transparency with an alpha color channel. SVG, GIF, and PNG files are better suited for line art. Scalable Vector Graphics (SVG) are precise mathematical images that retain quality when enlarged or shrunk. They typically cannot be compressed as much as other file formats. GIF files can have 8-bit 
+                transparency, and they are typically used for short video sequences. PNG files have more flexibility in that they are used for screenshots in addition to line art, as well as using RGB or Index color modes. They have transparency through an alpha color channel and can be placed over or under other colors without distortion.</p>
+            </article>
+            <article id="favicons">
+                <h3>Favicons</h3>
+                <!-- 1. How do browsers and devices use favicons? -->
+                <p>To help identify a website or app, browsers and different devices use what is commonly called a favicon, favorites icon, or touch icon. The symbol is typically saved in different file formats and formatted to display in the appropriate size and type depending on the browser or device. Common file formats are .SVG and .PNG, while .ICO is used for older browsers.
+                An online generator can be used to provide the multiple files used. The symbol can show up in the bookmarks bar or as an app icon for smartphones. The favicon for this webpage is my initials with a green background and is provided in 6 different sizes and formats.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Laura Roots</p>
+    </footer>
+</body>
+</html>
