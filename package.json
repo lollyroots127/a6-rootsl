@@ -1,5 +1,5 @@
 {
-  "name": "a5_process_form_data",
+  "name": "a6_process_order_form",
   "version": "1.0.0",
   "description": "Run node express to collect form data",
   "main": "index.js",

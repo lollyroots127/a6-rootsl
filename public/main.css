@@ -214,13 +214,22 @@
   }
   thead {
     color: var(--forestGreen);
+    font-family: 'Merriweather', serif;
+    
   }
-  tbody {}
+  tbody {
+  }
   tfoot {}
-  tr {}
-    tr:nth-child(even) {}
-  th {}
-  td {}
+  tr {
+  }
+    tr:nth-child(even) {
+      background-color: var(--transparentPink);
+    }
+  th {
+    border-bottom: 1px solid var(--forestGreen);
+  }
+  td {
+  }
     td:nth-child(1) {}
   colgroup {}
   data {}
@@ -245,9 +254,10 @@
     }
   label {
     display: block;
-    margin-top:2%;
+    margin: 1% 0%;
     padding: 0.5%;
   }
+
   input, button, textarea, select {
     font-size:110%;
     padding:1%;
@@ -266,8 +276,10 @@
 }
   button {
     margin-top: 2%;
+    background-color: var(--transparentPink);
   }
-  input {}
+  input{
+  }
   select {}
     optgroup {}
     option {}
